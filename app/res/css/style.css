@@ -1,0 +1,109 @@
+@font-face {
+  font-family: roboto;
+  font-stretch: normal;
+  src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  font-stretch: condensed;
+  src: url(../fonts/RobotoCondensed.ttf);
+}
+
+@font-face {
+  font-family: righteous;
+  font-stretch: condensed;
+  src: url(../fonts/Righteous.ttf);
+}
+
+* {
+	font-family: roboto;
+	overflow: hidden;
+}
+
+body {
+  background-color: #0D253A;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.icon {
+  height: 100px;
+}
+
+.title {
+  font-family: Righteous;
+  font-size: 4em;
+  margin-top: 50px;
+}
+
+.zephyr {
+  font-family: Righteous;
+}
+
+.subtitle {
+  font-size: 0.9em;
+}
+
+.contents {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.play-banner {
+  height: 75px;
+}
+
+.legal-container {
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.legal {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.login-stage {
+
+}
+
+.logged-in-stage {
+  display: none;
+}
+
+.float {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 11;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#reset-btn {
+  display: none;
+}
+
+#login-webview {
+  width: 100%;
+  height: 100%; 
+  z-index: 10;
+  top: 0; 
+  left: 0; 
+  position: fixed; 
+}
+
+iframe {
+  background-color: transparent;
+  border: 0px none transparent;
+  padding: 0px;
+  overflow: hidden;
+}

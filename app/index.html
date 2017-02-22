@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zephyr</title>
+  <link rel="stylesheet" type="text/css" href="./res/css/loading.css">
+  <link rel="stylesheet" type="text/css" href="./res/css/material.css">
+  <link rel="stylesheet" type="text/css" href="./res/css/mui.min.css">
+  <link rel="stylesheet" type="text/css" href="./res/css/snackbar.min.css">
+  <link rel="stylesheet" type="text/css" href="./res/css/materialdesignicons.min.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="./res/css/style.css">
+</head>
+<body>
+  <svg id="load" class="login-stage" x="0px" y="0px" viewBox="0 0 150 150">
+    <circle id="loading-inner" cx="75" cy="75" r="60"/>
+  </svg>
+
+  <webview id="login-webview" class="login-stage" src="about:blank"></webview>
+
+  <button id="reset-btn" class="float login-stage mui-btn mui-btn--raised mui-btn--primary">Reset</button>
+
+  <!-- After logged in the below content will show -->
+  <div class="logged-in-stage">
+    <div class="title">Zephyr</div>
+    <p id="hello-subtitle" class="subtitle logged-out-stage"></p>
+
+    <div class="contents">
+      <p>If you haven't yet, download <span class="zephyr">Zephyr</span> on your Android device.</p>
+      <p>Once the app is connected you may close this window, return to VR, and enjoy!</p>
+    </div>
+
+    <!-- Google Play Banner -->
+    <a href='https://play.google.com/store/apps/details?id=com.texasgamer.zephyr'><img class="play-banner" alt='Get it on Google Play' src='./res/img/play-badge.png'/></a>
+    
+    <div class="legal-container">
+      <p class="legal">Android, Google Play, and the Google Play logo are trademarks of Google Inc.</p>
+      <p class="legal">&copy;2017 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+    </div>
+  </div>
+
+  <script>
+    window.$ = window.jQuery = require('./res/js/jquery.js')
+  </script>
+  <script src="./res/js/snackbar.min.js"></script>
+  <script src="./res/js/external-links.js"></script>
+  <script src="./res/js/login.js"></script>
+</body>
+</html>

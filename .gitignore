@@ -1,0 +1,11 @@
+# Node.JS
+node_modules
+
+# Build output
+dist
+
+# Private configuration
+config-private.js
+
+# Runtime output
+token.json

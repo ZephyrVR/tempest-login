@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "npm run dist:win64",
+    "dist:win64": "build --platform win32 --arch x64",
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZephyrVR/login.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "electron": "^1.4.15",
+    "electron-builder": "^13.11.1",
+    "mocha": "^3.2.0",
+    "spectron": "^3.6.0"
+  },
+  "build": {
+    "productName": "Zephyr",
+    "appId": "com.texasgamer.zephyr",
+    "win": {
+      "iconUrl": "https://raw.githubusercontent.com/ZephyrVR/zephyr-login/master/build/icon.ico"
+    }
+  }
+}

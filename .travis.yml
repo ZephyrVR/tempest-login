@@ -1,0 +1,28 @@
+os:
+  - linux
+
+language: node_js
+
+node_js:
+  - 'node'
+
+cache:
+  directories:
+    - node_modules
+    - app/node_modules
+
+notifications:
+  email: false
+
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3
+
+install:
+  - node --version
+  - npm --version
+  - npm install
+
+script:
+  - npm test
