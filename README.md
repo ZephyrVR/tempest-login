@@ -31,9 +31,9 @@ Upon successful login, a file named `token.json` will be created in your current
 
 ```
 {
-   "name":"Username",
-   "avatar":"https://steamcdn-a.akamaihd.net/.../image.jpg",
-   "room":"Zephyr Room ID",
-   "token":"Zephyr Token"
+   "name": "Username",
+   "avatar": "https://steamcdn-a.akamaihd.net/.../image.jpg",
+   "room": "Zephyr Room ID",
+   "token": "Zephyr Token"
 }
 ```
