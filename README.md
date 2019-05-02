@@ -5,6 +5,8 @@ Zephyr Login
 [![devDependencies Status](https://david-dm.org/ZephyrVR/login/dev-status.svg)](https://david-dm.org/ZephyrVR/login?type=dev)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ZephyrVR/login/master/LICENSE)
 
+> **NOTE:** This project was part of [Project Tempest](https://github.com/ZephyrVR/documents/blob/master/project-tempest.md) and is no longer actively maintained.
+
 Desktop application built with [Electron](http://electron.atom.io) which enables a user to quickly authenticate with [Zephyr Server](https://github.com/ZephyrVR/server).
 
 ## Usage
